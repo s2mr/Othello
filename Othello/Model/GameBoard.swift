@@ -1,4 +1,8 @@
 struct GameBoard {
+    enum Const {
+        static let sideLength = 8
+    }
+
     var player: Player = .black
 
     var stones: [[Stone]] = [
