@@ -7,6 +7,10 @@ struct GameBoardView: View {
         VStack(spacing: 4) {
             Text("Turn for \(viewModel.playerName)")
 
+            Button("Restart") {
+                self.viewModel.restart()
+            }
+
             ForEach(0..<GameBoard.Const.sideLength, id: \.self) { row in
                 HStack(spacing: 4) {
                     ForEach(0..<GameBoard.Const.sideLength, id: \.self) { column in
