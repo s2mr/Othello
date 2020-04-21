@@ -18,6 +18,7 @@
 		6E3A15E0244F2FB0007BE65E /* GameBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A15DF244F2FB0007BE65E /* GameBoardViewModel.swift */; };
 		6E3A15E2244F320E007BE65E /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A15E1244F320E007BE65E /* GameBoard.swift */; };
 		6E3A15E4244F3234007BE65E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A15E3244F3234007BE65E /* Player.swift */; };
+		6EBAA085244F428100BCCFC9 /* Stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBAA084244F428100BCCFC9 /* Stone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		6E3A15DF244F2FB0007BE65E /* GameBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewModel.swift; sourceTree = "<group>"; };
 		6E3A15E1244F320E007BE65E /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		6E3A15E3244F3234007BE65E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6EBAA084244F428100BCCFC9 /* Stone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				6E3A15E1244F320E007BE65E /* GameBoard.swift */,
+				6EBAA084244F428100BCCFC9 /* Stone.swift */,
 				6E3A15E3244F3234007BE65E /* Player.swift */,
 			);
 			path = Model;
@@ -302,6 +305,7 @@
 			files = (
 				6E01D165244F2951007CAD8A /* AppDelegate.swift in Sources */,
 				6E3A15E0244F2FB0007BE65E /* GameBoardViewModel.swift in Sources */,
+				6EBAA085244F428100BCCFC9 /* Stone.swift in Sources */,
 				6E3A15E2244F320E007BE65E /* GameBoard.swift in Sources */,
 				6E01D167244F2951007CAD8A /* SceneDelegate.swift in Sources */,
 				6E3A15E4244F3234007BE65E /* Player.swift in Sources */,

@@ -5,10 +5,12 @@ struct GameBoardView: View {
 
     var body: some View {
         VStack(spacing: 4) {
+            Text("Turn for \(viewModel.playerName)")
+
             ForEach(0..<GameBoard.Const.sideLength, id: \.self) { row in
                 HStack(spacing: 4) {
                     ForEach(0..<GameBoard.Const.sideLength, id: \.self) { column in
-                            Button("") {
+                            Button("\(row)\(column)") {
                                 self.viewModel.didSelect(at: row, column: column)
                             }
                             .frame(width: 44, height: 44, alignment: .center)
