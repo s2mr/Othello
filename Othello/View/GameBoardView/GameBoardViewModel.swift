@@ -18,6 +18,8 @@ final class GameBoardViewModel: ObservableObject {
     }
 
     func didSelect(at row: Int, column: Int) {
+        guard gameBoard.canPutStone(gameBoard.player.stone, at: row, column: column) else { return }
+
         gameBoard.stones[row][column] = gameBoard.player.stone
         gameBoard.player.toggle()
 

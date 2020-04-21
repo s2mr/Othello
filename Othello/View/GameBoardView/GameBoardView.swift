@@ -5,10 +5,12 @@ struct GameBoardView: View {
 
     var body: some View {
         VStack(spacing: 4) {
-            Text("Turn for \(viewModel.playerName)")
+            HStack {
+                Text("Turn for \(viewModel.playerName)")
 
-            Button("Restart") {
-                self.viewModel.restart()
+                Button("Restart") {
+                    self.viewModel.restart()
+                }
             }
 
             ForEach(0..<GameBoard.Const.sideLength, id: \.self) { row in

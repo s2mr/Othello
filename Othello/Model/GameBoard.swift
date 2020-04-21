@@ -21,6 +21,10 @@ extension GameBoard {
             [.empty, .empty, .empty, .empty, .empty, .empty, .empty, .empty]
         ]
     )
+
+    func canPutStone(_ stone: Stone, at row: Int, column: Int) -> Bool {
+        true
+    }
 }
 
 extension GameBoard: CustomDebugStringConvertible {
