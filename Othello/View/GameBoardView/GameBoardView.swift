@@ -13,9 +13,9 @@ struct GameBoardView: View {
                 }
             }
 
-            ForEach(0..<GameBoard.Const.sideLength, id: \.self) { row in
+            ForEach(0..<Const.sideLength, id: \.self) { row in
                 HStack(spacing: 4) {
-                    ForEach(0..<GameBoard.Const.sideLength, id: \.self) { column in
+                    ForEach(0..<Const.sideLength, id: \.self) { column in
                             Button("\(row)\(column)") {
                                 self.viewModel.didSelect(at: row, column: column)
                             }

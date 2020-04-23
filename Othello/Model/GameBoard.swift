@@ -1,10 +1,6 @@
 typealias GameBoard = [[Stone]]
 
 extension GameBoard {
-    enum Const {
-        static let sideLength = 8
-    }
-
     static let initialState: GameBoard = [
         [.empty, .empty, .empty, .empty, .empty, .empty, .empty, .empty],
         [.empty, .empty, .empty, .empty, .empty, .empty, .empty, .empty],
@@ -25,4 +21,8 @@ extension GameBoard {
             }.joined(separator: " ")
         }.joined(separator: "\n")
     }
+}
+
+enum Const {
+    static let sideLength = 8
 }
