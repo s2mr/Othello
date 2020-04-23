@@ -4,6 +4,8 @@ enum Player {
 }
 
 extension Player {
+    static let initialState = Player.black
+
     mutating func toggle() {
         switch self {
         case .black:
