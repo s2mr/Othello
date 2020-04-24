@@ -25,11 +25,10 @@ struct GameEngine {
         let currentPlayerStone = currentPlayer.stone
         let rowLine = currentGameBoard.row(at: row)
         let columnLine = currentGameBoard.column(at: column)
-        let (diagonal1, diagonal2) = currentGameBoard.diagonal(at: row, column: column)
+        let (diagonalLine1, diagonalLine2) = currentGameBoard.diagonal(at: row, column: column)
 
-        columnLine[row]
-
-        return true
+        return rowLine.canPutStone(at: column, for: currentPlayerStone)
+            || columnLine.canPutStone(at: row, for: currentPlayerStone)
     }
 
     mutating func putStone(at row: Int, column: Int) {
