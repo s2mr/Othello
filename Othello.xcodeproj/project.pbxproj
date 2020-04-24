@@ -157,6 +157,13 @@
 			isa = PBXGroup;
 			children = (
 				6E2C772C2451F69F00BD7204 /* Array+Utility.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6E2C77302452710F00BD7204 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
 				6E2C772E2451FB2D00BD7204 /* Stone+Utility.swift */,
 			);
 			path = Extension;
@@ -192,6 +199,7 @@
 		6E529C772451DD920073C835 /* GameEngine */ = {
 			isa = PBXGroup;
 			children = (
+				6E2C77302452710F00BD7204 /* Extension */,
 				6E529C782451DD9C0073C835 /* GameEngine.swift */,
 			);
 			path = GameEngine;
